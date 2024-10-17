@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222;
+  }
+  .navbar .logo {
+    color: #fff;
+    font-size: 24px;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 100px;
+    background: url('') no-repeat center/cover;
+    color: #901313;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  /* Portfolio Section */
+  .portfolio {
+    padding: 50px;
+  }
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .portfolio-short  {
+    width: 50%;
+    border-radius: 4px;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    background-color: #ddd;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  /* Contact Form */
+  .contact {
+    padding: 50px;
+  }
+  .contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+ 
+  .portfolio-item video, 
+.portfolio-item iframe {
+  width:80%;
+  height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    background-color: #222;
+    color: white;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#footer ul {
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+#footer #socialicons {
+	margin-top: 100px;
+}
+
+#footer #socialicons li {
+	display: inline;
+	color:white;
+}
+
+.portfolio{
+  text-align: center; 
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Editkaro.in</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Transforming Your Vision into Stunning Visual Stories</h1>
+        <button onclick="scrollToSection('#portfolio')" class="btn btn-dark">Explore Portfolio</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Editkaro.in, we specialize in video editing and social media marketing. Our mission is to craft visually
+            stunning content that leaves a lasting impact.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Our Work</h2>
+        <br>
+        <div class="filter-buttons">
+            <button onclick="filterSelection('all')" class="btn btn-dark">All</button>
+            <button onclick="filterSelection('short')" class="btn btn-dark">Short-form Videos</button>
+            <button onclick="filterSelection('long')" class="btn btn-dark">Long-form Videos</button>
+            <button onclick="filterSelection('gaming')" class="btn btn-dark" >Gaming Videos</button>
+            <button onclick="filterSelection('football')" class="btn btn-dark">Football Edits</button>
+            <button onclick="filterSelection('eCommerce')" class="btn btn-dark">eCommerce Ads</button>
+            <button onclick="filterSelection('color')" class="btn btn-dark">Color Grading</button>
+            <button onclick="filterSelection('anime')" class="btn btn-dark">Anime Videos</button>
+        </div>
+<br>
+<br>
+        <div class="portfolio-grid">
+            <div class="portfolio-item short">
+                <video controls>
+                    <source src="Videos/shortform1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="portfolio-item long">
+                <video controls>
+                    <source src="Videos/L1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="portfolio-item gaming">
+                <video controls>
+                    <source src="Videos/G1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="portfolio-item football">
+                <video controls>
+                    <source src="Videos/f1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="portfolio-item football">
+                <video controls>
+                    <source src="Videos/f2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="portfolio-item eCommerce">
+                <video controls>
+                    <source src="Videos/ec1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="portfolio-item color">
+                <video controls>
+                    <source src="Videos/Color Grading.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="portfolio-item anime">
+                <video controls>
+                    <source src="Videos/A1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            
+        </div>
+
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-slider">
+            <p>"Editkaro.in transformed our product videos into visual masterpieces!" - eCommerce Client</p>
+            <p>"Highly professional and creative with anime edits." - Anime Fan</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button class="btn btn-outline-dark" type="submit"> Send Message </button>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4">
+                    <h5>© 2024 Editkaro.in. All Rights Reserved.</h5>
+
+                </div>
+                <div class="col-md-4">
+                    <h4> Follow Us </h4>
+                    <ul id="socialicons">
+                        <li class="list-inline-item"> <i class="bi bi-whatsapp"></i> <i class="bi bi-instagram"></i> <i
+                                class="bi bi-facebook"></i> <i class="bi bi-twitter"></i></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
